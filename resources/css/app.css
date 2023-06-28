@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+    @apply bg-orange-500;
+}
+
+.active svg {
+    @apply fill-white;
+}
