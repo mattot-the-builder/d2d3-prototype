@@ -19,6 +19,10 @@ export default defineConfig({
         alias: {
             "~fabric": path.resolve(__dirname, "node_modules/fabric"),
             "~three": path.resolve(__dirname, "node_modules/three"),
+            "~fontfaceobserver": path.resolve(
+                __dirname,
+                "node_modules/fontfaceobserver"
+            ),
         },
     },
 });

@@ -1,5 +1,5 @@
 <div class="flex justify-between my-5 w-full">
-        
+    
     <button class="hover:bg-orange-500 p-3 rounded-lg group" id="bring-forward" type="button">
         <svg class="h-6 fill-gray-700 group-hover:fill-white" width="41" height="42" viewBox="0 0 41 42" fill="black" xmlns="http://www.w3.org/2000/svg">
             <path d="M27.7115 14.7509C27.7115 17.5585 27.671 20.3661 27.7241 23.1736C27.7874 26.5625 25.3466 28.5578 22.3341 28.6009C16.6988 28.6796 11.0609 28.6745 5.42548 28.6009C2.41557 28.5628 -0.0125975 26.5777 4.91776e-05 23.1939C0.0228132 17.5153 -0.0050095 11.8393 0.0101665 6.16066C0.0202839 2.94185 2.20816 0.746059 5.40778 0.738443C11.0659 0.725751 16.7215 0.718135 22.3796 0.740982C25.4705 0.753674 27.7317 2.93931 27.714 6.01343C27.6963 8.92508 27.7115 11.8393 27.7115 14.7509Z"/>
@@ -44,8 +44,22 @@
 </div>
 
 <div class="flex flex-col items-start menu-contents hidden" id="add-text">
-    <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 " id="user-text" placeholder="add text here ..." required>
-    <button type="button" class="text-white bg-orange-500 hover:bg-orange-600 mt-3 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Add Text</button>
+    
+    <input type="text" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 mb-3" id="user-text" placeholder="add text here ...">
+    
+    <label for="fonts" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Select font</label>
+    
+    <select id="fonts" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5">
+        <option value="ABeeZee">ABeeZee</option>
+        <option value="Abhaya Libre">Abhaya Libre</option>
+        <option value="Aboreto">Aboreto</option>
+        <option value="Abril Fatface">Abril Fatface</option>
+        
+    </select>
+    
+    <button type="button" id="add-text-button" class="text-white bg-orange-500 hover:bg-orange-600 mt-3 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">Add Text</button>
+    
+    
 </div>  
 
 <div class="flex flex-col items-start menu-contents hidden" id="upload-image">
@@ -66,7 +80,7 @@
 {{-- Another div here --}}
 
 
-<div class="flex flex-col items-start menu-contents" id="layers">
+<div class="flex flex-col items-start menu-contents hidden" id="layers">
     <span class="font-bold">Layers</span>
     
     <div class="flex flex-column p-3">
@@ -75,7 +89,7 @@
     
     <ul class="w-full list-none text-gray-700" id="layers-list">
         
-        <li class="flex align-middle px-5 bg-slate-200 text-slate-700 py-3 rounded-lg font-semibold mb-2">
+        <li class="flex align-middle px-5 bg-slate-200 text-slate-700 py-3 rounded-lg font-semibold mb-2 layers≈≈">
             <svg class="w-4 me-5 fill-gray-400 hover:fill-white" viewBox="0 0 50 60" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.00452 7.40631C0.982545 3.61703 3.93986 0.974052 7.51676 1.00001C11.2299 1.03029 13.9543 3.60405 14.0334 7.30682C14.1081 10.8279 11.1684 13.8429 7.5607 13.791C3.97062 13.7434 1.0177 11.2042 1.00452 7.40631Z"/>
                 <path d="M22.9887 7.14243C23.103 3.40506 26.1394 0.935112 29.5405 0.999997C33.4074 1.07786 36.1055 3.88089 35.9912 7.56635C35.8814 11.1004 32.867 13.9251 29.3823 13.8083C25.678 13.6872 22.8262 10.7154 22.9887 7.14243Z"/>

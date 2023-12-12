@@ -1,6 +1,5 @@
 function openMenu(evt, menuName) {
     var menuContents = document.getElementsByClassName("menu-contents");
-    console.log(menuContents);
     for (var i = 0; i < menuContents.length; i++) {
         menuContents[i].classList.add("hidden");
     }
